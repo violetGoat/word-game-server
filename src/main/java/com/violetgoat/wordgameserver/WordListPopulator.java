@@ -22,7 +22,6 @@ public class WordListPopulator {
         basicDataSource.setPassword("postgres1");
         WordEntryDao wordEntryDao = new JdbcWordEntryDao(new JdbcTemplate(basicDataSource));
         WordListFileParser wordListFileParser = new WordListFileParser(wordEntryDao);
-        wordListFileParser.populateTable(NOT_COMMON_WORD_LIST, "not-common");
         wordListFileParser.populateTable(COMMON_WORD_LIST, "common");
     }
 }

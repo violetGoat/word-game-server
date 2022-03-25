@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Random;
 
 @RestController
+@CrossOrigin("https://www.violetgoat.com")
 @PreAuthorize("permitAll()")
 public class WordListController {
 
